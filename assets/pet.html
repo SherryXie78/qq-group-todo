@@ -1,0 +1,30 @@
+<section id="tab-pet" hidden>
+  <div class="pet-heading"><div><p class="pet-eyebrow">把努力，变成一点快乐</p><h2>我的小搭子</h2></div><span class="pet-wallet"><span aria-hidden="true">✦</span> <b data-pet-balance>0</b> 积分</span></div>
+  <div class="pet-room" id="pet-room">
+    <div class="pet-room-label"><span class="pet-live-dot"></span> 你的专属休息站</div>
+    <button id="pet-sound" class="pet-sound" aria-label="开启互动音效" aria-pressed="false" type="button">音效：关</button>
+    <div class="pet-room-window" aria-hidden="true"><i></i><i></i></div>
+    <span class="pet-spark spark-one" aria-hidden="true">✧</span><span class="pet-spark spark-two" aria-hidden="true">✦</span>
+    <p class="pet-speech" id="pet-speech" role="status" aria-live="polite">今天也在努力，真好。来歇一会儿吧！</p>
+    <div class="pet-character" id="pet-character" role="img" aria-label="卡通小搭子">
+      <div class="pet-shadow"></div>
+      <div class="pet-figure"><div class="pet-leg left"></div><div class="pet-leg right"></div><div class="pet-arm left"></div><div class="pet-arm right"></div><div class="pet-body"><span>✦</span></div>
+        <div class="pet-head"><img id="pet-avatar" alt="自定义角色头像" hidden><svg id="pet-default-face" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#ffe4bf"/><path d="M7 47C6 0 112-4 114 45L95 36 83 17 73 32 54 20 40 37 21 31Z" fill="#535183"/><path d="M39 59v8m42-8v8" stroke="#363457" stroke-width="6" stroke-linecap="round"/><ellipse cx="29" cy="78" rx="10" ry="5" fill="#f5b1aa"/><ellipse cx="91" cy="78" rx="10" ry="5" fill="#f5b1aa"/><path d="M50 80q10 10 20 0" fill="none" stroke="#a86559" stroke-width="4" stroke-linecap="round"/></svg></div>
+      </div>
+      <span class="pet-effect pet-cookie" aria-hidden="true">🍪</span><span class="pet-effect pet-hammer" aria-hidden="true">🔨</span><span class="pet-effect pet-stars" aria-hidden="true">✦ ✧ ✦</span><span class="pet-effect pet-hearts" aria-hidden="true">♥</span>
+      <svg class="pet-effect pet-woodfish" viewBox="0 0 100 75" aria-hidden="true"><ellipse cx="50" cy="51" rx="36" ry="20" fill="#bd783f"/><path d="M28 54q22-24 43-4" fill="none" stroke="#754527" stroke-width="6" stroke-linecap="round"/><path d="m72 8-17 27" stroke="#875130" stroke-width="9" stroke-linecap="round"/><ellipse cx="74" cy="8" rx="11" ry="7" fill="#d2a56a"/></svg>
+    </div>
+    <div class="pet-name-row"><strong id="pet-name">小搭子</strong><button id="pet-customize" type="button">换个形象 ↗</button></div>
+    <p class="pet-room-footer">不用赶进度，在这里轻松一下。</p>
+  </div>
+  <p id="pet-network" class="pet-network" role="status">正在同步积分…</p>
+  <div class="pet-actions" aria-label="积分兑换互动">
+    <button type="button" data-pet-action="feed" disabled><span class="pet-action-icon">🍪</span><strong>喂食</strong><small>5 积分</small></button>
+    <button type="button" data-pet-action="bonk" disabled><span class="pet-action-icon">🔨</span><strong>殴打</strong><small>10 积分 · 卡通敲敲</small></button>
+    <button type="button" data-pet-action="woodfish" disabled><span class="pet-action-icon">🪵</span><strong>敲木鱼</strong><small>2 积分</small></button>
+  </div>
+  <p class="pet-empty-hint" id="pet-earn-hint">完成一项待办，收获 10 积分，再来玩一会儿。</p>
+  <div class="pet-lower-grid"><div class="pet-log-card"><div class="pet-log-heading"><h3>努力的小脚印</h3><span id="pet-interaction-count">0 次互动</span></div><ul id="pet-ledger"><li class="pet-log-empty">这里会记住你的努力。第一份奖励，等你来拿。</li></ul></div>
+  <details class="pet-rules"><summary>积分怎么玩？</summary><p id="pet-rules-text"></p><p>积分只是本应用里的奖励，没有充值或现金兑换。角色不会因久未打开而扣分或消失。头像仅保存在自己的工作台，不发送给 DeepSeek。</p><p>如果撤销已经领奖的任务，且积分已用于互动，会显示待补回积分；完成任务即可补回。</p></details></div>
+</section>
+<div class="pet-toast" id="pet-toast" role="status" aria-live="polite" hidden><span class="pet-toast-star" aria-hidden="true">✦</span><div><strong id="pet-toast-title"></strong><small id="pet-toast-detail"></small></div><button type="button" id="pet-toast-go">去宠物 ↗</button></div>

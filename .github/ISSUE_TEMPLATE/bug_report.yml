@@ -1,0 +1,36 @@
+name: 使用问题与周日反馈
+description: 记录一次真实反馈、排查和验收过程
+title: "[反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: "请使用虚构或脱敏例子，不粘贴账号、聊天原文、API Key、二维码或私人链接。"
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本与测试设备类型
+      placeholder: "仅填写版本、电脑或 Android；不要填写设备标识"
+  - type: textarea
+    id: problem
+    attributes:
+      label: 遇到了什么问题
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 希望如何改进
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 脱敏的检查结果或虚构例子
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 怎样才算修好
